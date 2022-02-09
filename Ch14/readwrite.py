@@ -33,3 +33,4 @@ def filerea(name):
 
 # 기능을 분리해서 사용
 # 하나 이상의 상황을 만들 수 있다
+# function
