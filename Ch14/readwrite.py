@@ -9,10 +9,12 @@ def filewrite(name, content):
 
 def fileread(name):
     try:
-        f = open(name,'rt');
+        f = open(name, 'rt');
         text = f.read();
-    except:
-        raise FileNotFoundError;
+    except FileNotFoundError as fe:
+        raise fe;
+    except IOError as ie:
+        raise ie;
     finally:
         f.close();
     return text;
